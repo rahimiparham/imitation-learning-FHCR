@@ -32,5 +32,9 @@ Upload the dataset, train.ipynb, and models to colab and configure the training 
 ## Evaluation
 Download the trained model with the param checkpoints and use `estimate_success_rate.py` to perform online evaluation.
 
+## Results
+The following cnn_fcn_64x64 model achieved a higher success rate at ~80% compared to alexnet's ~20%. (maxpool, Relu, and batch norm have been omitted)
+![](model_structure.png)
+
 ## Why not RL?
 No GPU was available during this short project and immitation learning was the only way to use colab. (CoppeliaSim can't be installed on colab)
