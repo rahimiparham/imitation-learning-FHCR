@@ -1,5 +1,5 @@
 # Vision-based Manipulator Control
-The objective is to move a 7DoF robotic manipulator towards a red target ball based on 5 RGB images. The agents learn to output the correct joint velocity commands based on demonstration datasets (immitation learning). The dataset is generated using coppeliasim, PyRep, and RLbench. The repo contains a script to create the dataset, various NN models created with PyTorch and a script for online evaluation of differnt models to estimate a success rate. An episode is considered successful if the robot is within a threshold distance of the target withing a timeout. **This project was originally completed in August 2023 as a part of a private GitLab repo and later moved to GitHub, hence the lack of commit history.**
+The objective is to move a 7DoF robotic manipulator towards a red target ball based on 5 RGB images. The agents learn to output the correct joint velocity commands based on demonstration datasets (imitation learning). The dataset is generated using coppeliasim, PyRep, and RLbench. The repo contains a script to create the dataset, various NN models created with PyTorch and a script for online evaluation of differnt models to estimate a success rate. An episode is considered successful if the robot is within a threshold distance of the target withing a timeout. **This project was originally completed in August 2023 as a part of a private GitLab repo and later moved to GitHub, hence the lack of commit history.**
 
 ## CNN+FCN model successful episode after training
 ![](videos/success.gif)
@@ -37,4 +37,4 @@ The following cnn_fcn_64x64 model achieved a higher success rate at ~80% compare
 ![](model_structure.png)
 
 ## Why not RL?
-No GPU was available during this short project and immitation learning was the only way to use colab. (CoppeliaSim can't be installed on colab)
+No GPU was available during this short project and imitation learning was the only way to use colab. (CoppeliaSim can't be installed on colab)
