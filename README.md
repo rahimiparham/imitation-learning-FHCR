@@ -2,6 +2,7 @@
 The objective is to move a 7DoF robotic manipulator towards a red target ball based on 5 RGB images. The agents learn to output the correct joint velocity commands based on demonstration datasets (immitation learning). The dataset is generated using coppeliasim, PyRep, and RLbench. The repo contains a script to create the dataset, various NN models created with PyTorch and a script for online evaluation of differnt models to estimate a success rate. An episode is considered successful if the robot is within a threshold distance of the target withing a timeout. **This project was originally completed in August 2023 as a part of a private GitLab repo and later moved to GitHub, hence the lack of commit history.**
 
 ## CNN+FCN model successful episode after training
+![](https://github.com/rahimiparham/immitation-learning-FHCR/tree/main/videos/success.gif)
 
 ## Setup and dependencies
 In the following a number of dependencies have to be resolved. It is recommended to use a conda environment where possible.
